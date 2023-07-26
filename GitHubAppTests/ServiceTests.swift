@@ -6,7 +6,7 @@ class ServiceTests: XCTestCase {
     func testFetchList() throws {
         
         let network = NetworkMock()
-        var service = Service(network: network)
+        let service = Service(network: network)
         
         let expectation = self.expectation(description: "Fetching")
         var names: [String]?
