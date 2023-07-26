@@ -8,7 +8,7 @@ final class ListViewController: UIViewController {
         return listView
     }()
 
-    private let service = Service()
+    private var service = Service()
 
     init() {
         super.init(nibName: nil, bundle: nil)
